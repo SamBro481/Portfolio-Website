@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="left">Sam's Portfolio</div>
+          <div class="right">
+            <ul>
+                <li><a href="https://sambro481.github.io/Portfolio-Website/"">Home</a></li>
+                <li><a href="./about.html"">About</a></li>
+                <li><a href="./services.html"">Services</a></li>
+                <li><a href="./projects.html"">Projects</a></li>
+                <li><a href="./contact.html"">Contact Me</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+        
+      <div class="contactForm">
+        <span id="element"></span>
+        <form>
+            <div class="mb-3">
+                <label for="clientEmail" class="form-label">Name</label>
+                <input type="text" class="form-control" id="clientEmail" aria-describedby="emailHelp">
+              </div>            
+            <div class="mb-3">
+              <label for="clientEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="clientEmail" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email or number with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="clientPhone" class="form-label">Phone Number</label>
+              <input type="phone" class="form-control" id="clientPhone">
+            </div>
+            <div class="mb-3">
+                <label for="clientPhone" class="form-label">Enquiry</label>
+                <input type="text" class="form-control" id="clientPhone">
+              </div>            
+            <div class="mb-3" id="form-check">
+              <input type="checkbox" class="form-check-input" id="isClient">
+              <label class="form-check-label" for="isClient">I want to Collaborate on a Project</label>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+      </div>
+
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Sam's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li><a target="_blank" href="https://github.com/SamBro481"><i class="fa-brands fa-github"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/_sam.red/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/sameer-rehman-b87a27281/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a target="_blank" href="https://codeforces.com/profile/kingwarrior481"><i class="fa-solid fa-code"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- <p class="last">Copyright 2023</p> -->
+      <div class="footer-rights">
+        Copyright &#169; www.samsportfolio.com | All Rights Reserved
+      </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/e296e61aa0.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Contact Me for Work or Enquiries'],
+        typeSpeed: 50,
+      });
+    </script>
+</body>
+</html>

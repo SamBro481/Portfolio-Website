@@ -1,0 +1,390 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    background-color: rgb(10, 10, 39);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: rgb(176, 176, 244);
+    font-size: 1.01rem;
+}
+
+.left {
+    font-size: 1.5rem;;
+}
+
+body {
+    margin-top: 70px;
+    background-color: rgb(0, 0, 33);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+#element {
+    color: rgb(170, 107, 228);
+}
+
+.purple {
+    color: rgb(170, 107, 228);
+}
+
+.text-gray {
+    color: gray;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    margin: 130px 0;
+    align-items: center;
+
+}
+
+.firstSection > div {
+    width: 31%;;
+}
+
+.leftSection {
+    font-size: 2.5rem;
+}
+
+.leftSection .btn {
+    padding: 9px;
+    color: white;
+    background-color: rgb(0, 0, 33);
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.leftSection .btn:hover {
+    color: white;
+    background-color: rgb(159, 74, 239)
+
+}
+
+.rightSection img{
+    width: 80%;
+    margin: 10px 0;
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+
+.secondSection h1 {
+    font-size: 1.7rem;
+}
+
+main hr {
+    border: 0;
+    background: rgb(170, 107, 228);
+    height: 1.2px;
+    margin: 40px 84px;
+}
+
+.secondSection .box {
+    background: white;
+    width: 77vw;
+    height: 2px;
+    margin: 56px 0;
+    display: flex;
+}
+
+.secondSection .vertical {
+    height: 93px;
+    width: 1px;
+    background: white;
+    margin: 0 110px;
+}
+
+.image-top {
+    width: 23px;
+    position: relative;
+    top: -29px;
+    left: -11px;
+ 
+}
+
+.vertical-title {
+    position: relative;
+    top: 66px;
+    width: 150px;
+}
+
+.vertical-desc {
+    position: relative;
+    top: 85px;
+    font-size: 10px;
+    width: 150px;
+    color: gray;
+
+}
+
+footer {
+    background-color: rgb(10, 10, 39);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 122px;
+    padding-top: 23px;
+}
+
+.footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer ul li {
+    margin: 0 25px;
+}
+footer .footer-rights {
+    padding-top: 60px;
+    text-align: center;
+    color: gray;
+    padding-bottom: 20px;
+}
+
+.contactForm {
+    height: 550px;
+    padding: 0 50px;
+    padding-top: 90px;
+}
+
+.contactForm form div {
+    padding: 8px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm form div input {
+    width: 18vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 8px;
+    color: gray;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 0;
+}
+
+.contactForm .btn {
+    padding: 9px;
+    color: white;
+    background-color: rgb(0, 0, 33);
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.contactForm .btn:hover {
+    color: white;
+    background-color: rgb(159, 74, 239)
+
+}
+
+.contactForm #element {
+    padding: 12px 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+/* Chat GPT */
+
+.about {
+    height: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    margin-top: 125px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.about h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    line-height: 1.8;
+}
+
+.about h3 {
+    margin-top: 20px;
+    color: rgb(170, 107, 228);
+}
+
+.about ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about li::before {
+    content: '\2022'; /* Add a bullet point using Unicode character */
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.about #element {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.about hr {
+    margin: 15px 0px;
+    border: 0;
+    background: rgb(170, 107, 228);
+    height: 1.2px;
+}
+
+#moreText {
+    display: none;
+    margin-top: 25px;
+}
+
+#toggleButton {
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+    background-color: rgb(0, 0, 33);
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#toggleButton:hover {
+    color: white;
+    background-color: rgb(159, 74, 239)
+}
+
+.about #year {
+    color: gray;
+}
+
+.projects {
+    height: 550px;
+    margin: 50px;
+    margin-top: 125px;
+}
+
+.projects #element {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.projects p {
+    color: gray;
+}
+
+/* Chat GPT */
+
+
+.services header {
+    background-color: rgb(159, 74, 239);
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 60px;
+}
+
+.services .card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 30px auto;
+}
+
+.services .card {
+    flex-basis: calc(33.3333% - 20px);
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.services .card:hover {
+    transform: scale(1.05);
+}
+
+.services .card-content {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.services .card:hover .card-content {
+    opacity: 1;
+}
+
+.services h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.services p {
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.services #element {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="left">Sam's Portfolio</div>
+          <div class="right">
+            <ul>
+                <li><a href="https://sambro481.github.io/Portfolio-Website/"">Home</a></li>
+                <li><a href="./about.html"">About</a></li>
+                <li><a href="./services.html"">Services</a></li>
+                <li><a href="./projects.html"">Projects</a></li>
+                <li><a href="./contact.html"">Contact Me</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="about">
+            <span id="element"></span>
+
+            <hr>
+            <p>Welcome to my corner of the internet! I'm Sameer Rehman a passionate Programmer with a keen interest in WebDevelopment. 
+                I'm on a journey to explore as much Technologies as i can, So far  I've explored the realms of Development and Data Structures. 
+                Join me as I share my thoughts, experiences, and insights.</p>
+        
+            <h3>My Journey</h3>
+            <p>Currently in my Early Days of Exploration, I have embarked on a journey filled with curiosity and a relentless pursuit of 
+                knowledge. I've dived into various projects, honing my skills in both frontend and backend and gaining hands-on experience 
+                in the respective.</p>
+        
+            <h3>Skills</h3>
+            <ul>
+                <li>Web Development</li>
+                <li>Frontend Technologies (HTML, CSS, JavaScript, React.js)</li>
+                <li>Backend Technologies (Node.js)</li>
+                <li>Frameworks (jQuery)</li>
+                <li>Problem Solving</li>
+                <li>Responsive Design</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        
+            <h3>Education</h3>
+            <p>National Institute of Technology, Srinagar (NIT-SXR)</p>
+            <p>Bachelor's Degree (B.Tech), Information Technology</p>
+            <p id="year">2023-2027</p>
+            <!-- Add more education entries as needed -->
+        
+            <h3>What I Love</h3>
+            <p>My passion extends beyond the digital world. Outside of coding and design, you'll find me engaging in my other Interests. 
+               Whether it's Working Out or Gaming, I believe in maintaining a balance and finding inspiration in diverse experiences.</p>
+        
+            <h3>More About Me</h3>
+            <p>With a solid background in Programming, I've honed my skills in WebDevelopment and developed a keen interest 
+                in various areas. From crafting clean and efficient code to creating engaging user experiences, I thrive on 
+                turning ideas into reality.....</p>
+
+            <p id="moreText">I believe in maintaining a balance between work and play. These diverse experiences contribute 
+                to my creativity and unique perspective.
+                
+                Feel free to explore the different sections of my website, and don't hesitate to reach out if you have any questions or 
+                just want to connect. Thank you for visiting, and I hope you find inspiration here! Feel free to adjust and personalize 
+                this text to better align with your background, experiences, and the overall tone you want to convey on your website.</p>
+            
+            <button id="toggleButton" onclick="toggleText()">Show More</button>
+            
+        </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Sam's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li><a target="_blank" href="https://github.com/SamBro481"><i class="fa-brands fa-github"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/_sam.red/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/sameer-rehman-b87a27281/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a target="_blank" href="https://codeforces.com/profile/kingwarrior481"><i class="fa-solid fa-code"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- <p class="last">Copyright 2023</p> -->
+      <div class="footer-rights">
+        Copyright &#169; www.samsportfolio.com | All Rights Reserved
+      </div>
+    </footer>
+
+    <script>
+    function toggleText() {
+    var moreText = document.getElementById("moreText");
+    var button = document.getElementById("toggleButton");
+
+    if (moreText.style.display === "" || moreText.style.display === "none") {
+        moreText.style.display = "block";
+        button.innerText = "Show Less";
+    } else {
+        moreText.style.display = "none";
+        button.innerText = "Show More";
+    }
+}
+
+    </script>
+
+    <script src="https://kit.fontawesome.com/e296e61aa0.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['About Me'],
+        typeSpeed: 70,
+      });
+    </script>
+</body>
+</html>

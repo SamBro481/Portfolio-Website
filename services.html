@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sameer - Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav>
+          <div class="left">Sam's Portfolio</div>
+          <div class="right">
+            <ul>
+                <li><a href="https://sambro481.github.io/Portfolio-Website/"">Home</a></li>
+                <li><a href="./about.html"">About</a></li>
+                <li><a href="./services.html"">Services</a></li>
+                <li><a href="./projects.html"">Projects</a></li>
+                <li><a href="./contact.html"">Contact Me</a></li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="services">
+            <header>
+                <h1>Services</h1>
+                <p>Technologies I have to Offer as of Now...</p>
+            </header>
+        
+            <div class="card-container">
+                <div class="card">
+                    <h2>Web Development</h2>
+                    <p>
+                        From creating stunning websites to dynamic web applications, I specialize in front-end and back-end development using the latest technologies.
+                    </p>
+                    <div class="card-content">
+                        <p>Key technologies: HTML, CSS, JavaScript, React, Node.js</p>
+                    </div>
+                </div>
+        
+                <div class="card">
+                    <h2>Mobile App Development</h2>
+                    <p>
+                        Turn your app idea into reality. I develop native and cross-platform mobile applications for iOS and Android that deliver a seamless user experience.
+                    </p>
+                    <div class="card-content">
+                        <p>Key technologies: Swift, Kotlin, React Native</p>
+                    </div>
+                </div>
+        
+                <!-- Add more cards as needed -->
+        
+            </div>
+        </div>
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+          <h3>Sam's Developer Portfolio</h3>
+        </div>
+        <div class="footer-second">
+          <ul>
+            <li><a target="_blank" href="https://github.com/SamBro481"><i class="fa-brands fa-github"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/_sam.red/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/sameer-rehman-b87a27281/"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a target="_blank" href="https://codeforces.com/profile/kingwarrior481"><i class="fa-solid fa-code"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- <p class="last">Copyright 2023</p> -->
+      <div class="footer-rights">
+        Copyright &#169; www.samsportfolio.com | All Rights Reserved
+      </div>
+    </footer>
+
+    <script>
+        // Add animation on scroll
+        window.addEventListener('scroll', function () {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach(card => {
+                const top = card.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                if (top < windowHeight - 100) {
+                    card.classList.add('show');
+                }
+            });
+        });
+    </script>
+
+    <script src="https://kit.fontawesome.com/e296e61aa0.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Currently, A Work in Progress'],
+        typeSpeed: 50,
+      });
+    </script>
+</body>
+</html>
